@@ -63,6 +63,10 @@
   var targets = links.map(function (a) { return document.querySelector(a.getAttribute("href")); });
   function onScroll() {
     var y = window.scrollY;
+    // safety net: never leave content hidden that is already on or above the screen
+    document.querySelectorAll(".reveal.pre").forEach(function (el) {
+      if (el.getBoundingClientRect().top < window.innerHeight) el.classList.remove("pre");
+    });
     nav.classList.toggle("scrolled", y > 40);
     var cur = -1;
     targets.forEach(function (t, n) { if (t && t.getBoundingClientRect().top < 160) cur = n; });
