@@ -13,6 +13,23 @@
 </head>
 <body>
 
+<header class="nav">
+  <a class="logo" href="#pocetna" aria-label="Antika – Kostolomac, početna">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4a5 5 0 1 1 0 10 5 5 0 0 1 0-10Z"/><path d="M8 18c6 0 11 3 16 9 5-6 10-9 16-9-3 9-8 15-13 18v8h-6v-8C16 33 11 27 8 18Z" opacity=".9"/></svg>
+    <span>Antika<small>kostolomac</small></span>
+  </a>
+  <nav class="nav__links" aria-label="Glavni meni">
+    <a href="#o-meni">O meni</a>
+    <a href="#metoda">Metoda</a>
+    <a href="#naslednici">Naslednici</a>
+    <a href="#utisci">Utisci</a>
+    <a href="#video">Video</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+  <a class="btn btn--lime nav__cta" href="#zakazivanje" data-book>Zakaži tretman <i class="arr"></i></a>
+  <button class="nav__toggle" aria-label="Otvori meni" aria-expanded="false"><span></span><span></span></button>
+</header>
+
 <!-- ============ HERO ============ -->
 <section class="hero" id="pocetna">
   <svg class="hero__spine" viewBox="0 0 400 900" aria-hidden="true">
@@ -28,22 +45,6 @@
     <g fill="url(#sp)" id="vertebrae"></g>
   </svg>
 
-  <header class="nav">
-    <a class="logo" href="#pocetna" aria-label="Antika – Kostolomac, početna">
-      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4a5 5 0 1 1 0 10 5 5 0 0 1 0-10Z"/><path d="M8 18c6 0 11 3 16 9 5-6 10-9 16-9-3 9-8 15-13 18v8h-6v-8C16 33 11 27 8 18Z" opacity=".9"/></svg>
-      <span>Antika<small>kostolomac</small></span>
-    </a>
-    <nav class="nav__links" aria-label="Glavni meni">
-      <a href="#o-meni">O meni</a>
-      <a href="#metoda">Metoda</a>
-      <a href="#naslednici">Naslednici</a>
-      <a href="#utisci">Utisci</a>
-      <a href="#video">Video</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
-    <a class="btn btn--lime nav__cta" href="tel:+381641336483">Zakaži tretman <i class="arr"></i></a>
-    <button class="nav__toggle" aria-label="Otvori meni" aria-expanded="false"><span></span><span></span></button>
-  </header>
 
   <div class="hero__inner container">
     <span class="tag tag--glass"><i class="spark"></i>Tradicija duža od 160 godina</span>
@@ -59,7 +60,7 @@
       </a>
       <div class="hero__copy">
         <p>Dečak sa Prokletija, čiji su preci radili nameštanje kičme i zglobova. Ppukovnik, hadži, vitez vidar i instruktor sinapsologije — Radomir Antić.</p>
-        <a class="btn btn--lime" href="#kontakt">Zakažite termin <i class="arr"></i></a>
+        <a class="btn btn--lime" href="#zakazivanje" data-book>Zakažite termin <i class="arr"></i></a>
       </div>
     </div>
   </div>
@@ -91,10 +92,10 @@
     <h2>Tvorac Dečanske<br>„Božje metode“<br>sinapsologije</h2>
     <p>Ortoped – kostolomac, vidar, iscelitelj, kiropraktičar, osteopat — ljudi koji nameštaju kosti. U Italiji su mi rekli da sam tvorac Dečanske metode sinapsologije, koju svakodnevno dokazujem u praksi, gde pacijenti kažu da je stvarno prirodna i da je prerasla u novu metodu rehabilitacije.</p>
     <div class="about__stats">
-      <div class="ring-stat"><span class="ring"><b>160+</b></span><div><h4>Godina tradicije</h4><p>Znanje predaka</p></div></div>
+      <div class="ring-stat"><span class="ring"><b data-count="160" data-suffix="+">160+</b></span><div><h4>Godina tradicije</h4><p>Znanje predaka</p></div></div>
       <div class="ring-stat"><span class="ring"><b>4</b></span><div><h4>Instruktora</h4><p>Sinapsologije u porodici</p></div></div>
     </div>
-    <a class="btn btn--dark" href="#kontakt">Zakažite termin <i class="arr"></i></a>
+    <a class="btn btn--dark" href="#zakazivanje" data-book>Zakažite termin <i class="arr"></i></a>
   </div>
   <figure class="about__img about__img--right reveal"><img src="assets/img/manastir.jpg" alt="Srpski manastir – tradicija iz doba Nemanjića"></figure>
 </section>
@@ -126,13 +127,13 @@
           <span class="card__icon"><svg viewBox="0 0 48 48"><path d="M24 4v40M16 10h16M14 17h20M16 24h16M14 31h20M16 38h16"/></svg></span>
           <h3>Nameštanje kičme</h3>
           <p>Kažem da su svi uzroci bolesti u skeletnom sistemu čoveka. Vraćanjem pršljenova u prirodni položaj otvaramo prostor za nesmetan rad nerava.</p>
-          <a class="btn btn--dark btn--sm" href="#kontakt">Zakaži <i class="arr"></i></a>
+          <a class="btn btn--dark btn--sm" href="#zakazivanje" data-book>Zakaži <i class="arr"></i></a>
         </article>
         <article class="card reveal">
           <span class="card__icon"><svg viewBox="0 0 48 48"><circle cx="16" cy="16" r="6"/><circle cx="32" cy="32" r="6"/><path d="M20 20l8 8M8 40l6-6M34 14l6-6"/></svg></span>
           <h3>Nameštanje zglobova</h3>
           <p>Ljudska ruka koja vrati zglob u normalno stanje — bez farmacije i komplikovanih uređaja, sa tradicijom i znanjem prenetim vekovima.</p>
-          <a class="btn btn--dark btn--sm" href="#kontakt">Zakaži <i class="arr"></i></a>
+          <a class="btn btn--dark btn--sm" href="#zakazivanje" data-book>Zakaži <i class="arr"></i></a>
         </article>
       </div>
       <div class="col col--mid">
@@ -154,7 +155,7 @@
           <span class="card__icon"><svg viewBox="0 0 48 48"><circle cx="30" cy="8" r="4"/><path d="M28 14l-8 10 8 6-4 12M20 24l-10 2M28 30l10 2M30 18l8 4"/></svg></span>
           <h3>Sportske povrede</h3>
           <p>Viši sportski fizioterapeuti sa iskustvom veslanja, rukometa i američkog fudbala znaju prednosti i mane obe medicine.</p>
-          <a class="btn btn--dark btn--sm" href="#kontakt">Zakaži <i class="arr"></i></a>
+          <a class="btn btn--dark btn--sm" href="#zakazivanje" data-book>Zakaži <i class="arr"></i></a>
         </article>
         <article class="card reveal">
           <span class="card__icon"><svg viewBox="0 0 48 48"><path d="M24 40c-8-6-14-12-14-20a8 8 0 0 1 14-5 8 8 0 0 1 14 5c0 8-6 14-14 20Z"/><path d="M18 22h4l2-4 3 8 2-4h3"/></svg></span>
@@ -175,19 +176,13 @@
     <h2>Jednostavan put do zdravije kičme</h2>
   </div>
   <div class="steps__box reveal">
-    <div class="steps__list">
+    <div class="steps__list" data-accordion>
       <details class="step" open>
-        <summary><span class="step__no">01</span><h3>Pozovite i zakažite termin</h3></summary>
-        <p>Zakazivanje termina svakog radnog dana od 9 do 20h. Pozovite Radomira, Bojana, Ivanu ili Jelenu — svi nastavljaju porodičnu tradiciju sa velikim uspehom.</p>
-      </details>
+        <summary><span class="step__no">01</span><h3>Pozovite i zakažite termin</h3></summary><div class="acc__body"><p>Zakazivanje termina svakog radnog dana od 9 do 20h. Pozovite Radomira, Bojana, Ivanu ili Jelenu — svi nastavljaju porodičnu tradiciju sa velikim uspehom.</p></div></details>
       <details class="step">
-        <summary><span class="step__no">02</span><h3>Dobijate adresu i vreme</h3></summary>
-        <p>Živimo i radimo u Beogradu, na Autokomandi, a periodično i na Zlatiboru. Adresa i mesto gde radimo biće vam poznati prilikom zakazivanja.</p>
-      </details>
+        <summary><span class="step__no">02</span><h3>Dobijate adresu i vreme</h3></summary><div class="acc__body"><p>Živimo i radimo u Beogradu, na Autokomandi, a periodično i na Zlatiboru. Adresa i mesto gde radimo biće vam poznati prilikom zakazivanja.</p></div></details>
       <details class="step">
-        <summary><span class="step__no">03</span><h3>Tretman i povratak u pokret</h3></summary>
-        <p>Nameštanje kičme i zglobova po Dečanskoj metodi. „Došla sam pomalo skeptična, a otišla pevajući“ — kako je zapisano u knjizi utisaka.</p>
-      </details>
+        <summary><span class="step__no">03</span><h3>Tretman i povratak u pokret</h3></summary><div class="acc__body"><p>Nameštanje kičme i zglobova po Dečanskoj metodi. „Došla sam pomalo skeptična, a otišla pevajući“ — kako je zapisano u knjizi utisaka.</p></div></details>
     </div>
     <figure class="steps__img"><img src="assets/img/decani.jpg" alt="Manastir Visoki Dečani – po njemu je metoda dobila ime"></figure>
   </div>
@@ -197,7 +192,7 @@
 <section class="stats" id="filozofija">
   <div class="container stats__grid">
     <div class="stats__lime reveal">
-      <div><b>160+</b><span>Godina porodične tradicije</span></div>
+      <div><b data-count="160" data-suffix="+">160+</b><span>Godina porodične tradicije</span></div>
       <div><b>9–20h</b><span>Zakazivanje svakog radnog dana</span></div>
     </div>
     <div class="stats__cream reveal">
@@ -234,35 +229,35 @@
   </div>
   <div class="team__grid">
     <article class="member reveal">
-      <img src="assets/img/radomir.jpg" alt="Hadži Radomir Antić">
+      <span class="fit"><img src="assets/img/radomir.jpg" alt="Hadži Radomir Antić"></span>
       <div>
         <h3>Radomir</h3><span class="role">Osnivač · kostolomac</span>
         <p>Ppukovnik, hadži, vitez vidar i instruktor sinapsologije. Tvorac Dečanske metode, autor knjige „Kako je lako isceliti čoveka“.</p>
-        <a class="phone" href="tel:+381641336483">064 13 36 483</a>
+        <div class="member__actions"><a class="phone" href="tel:+381641336483">064 13 36 483</a><a class="btn btn--dark btn--sm" href="#zakazivanje" data-book="radomir">Zakaži</a></div>
       </div>
     </article>
     <article class="member reveal">
-      <img src="assets/img/bojan.jpg" alt="Bojan Antić">
+      <span class="fit"><img src="assets/img/bojan.jpg" alt="Bojan Antić"></span>
       <div>
         <h3>Bojan</h3><span class="role">Prvi naslednik</span>
         <p>Viši sportski fizioterapeut, instruktor sinapsologije. Bio je veslač i igrač američkog fudbala. Više od 15 godina radio zajedno sa ocem.</p>
-        <a class="phone" href="tel:+381606280088">060 62 80 088</a>
+        <div class="member__actions"><a class="phone" href="tel:+381606280088">060 62 80 088</a><a class="btn btn--dark btn--sm" href="#zakazivanje" data-book="bojan">Zakaži</a></div>
       </div>
     </article>
     <article class="member reveal">
-      <img src="assets/img/ivana.jpg" alt="Ivana Antić">
+      <span class="fit"><img src="assets/img/ivana.jpg" alt="Ivana Antić"></span>
       <div>
         <h3>Ivana</h3><span class="role">Drugi naslednik</span>
         <p>Fizioterapeut, maser, edukator i instruktor sinapsologije. Masažom se bavi više od 18 godina. Prvakinja Srbije u dublskulu.</p>
-        <a class="phone" href="tel:+381604041177">060 40 41 177</a>
+        <div class="member__actions"><a class="phone" href="tel:+381604041177">060 40 41 177</a><a class="btn btn--dark btn--sm" href="#zakazivanje" data-book="ivana">Zakaži</a></div>
       </div>
     </article>
     <article class="member reveal">
-      <img src="assets/img/jelena.jpg" alt="Jelena Antić">
+      <span class="fit"><img src="assets/img/jelena.jpg" alt="Jelena Antić"></span>
       <div>
         <h3>Jelena</h3><span class="role">Treći naslednik</span>
         <p>Sportski fizioterapeut i instruktor sinapsologije. Rukometom se bavila od šeste godine. Usavršila je metodu nameštanja kostiju i kičme.</p>
-        <a class="phone" href="tel:+38169620089">069 620 089</a>
+        <div class="member__actions"><a class="phone" href="tel:+38169620089">069 620 089</a><a class="btn btn--dark btn--sm" href="#zakazivanje" data-book="jelena">Zakaži</a></div>
       </div>
     </article>
   </div>
@@ -280,7 +275,7 @@
       <figure class="tcard"><div class="stars">★★★★★</div><blockquote>„Ima šesnaest godina kako patim sa bolovima u predelu lumbalnog dela. Sve sam probala… Sada ustanem iz kreveta bez bola, osećam se kao devojka.“</blockquote><figcaption><b>Nikoleta Anastasija</b><span>Drama, Grčka</span></figcaption></figure>
       <figure class="tcard tcard--video">
         <a href="https://www.youtube.com/watch?v=mboca1p2gU4" target="_blank" rel="noopener">
-          <img src="https://img.youtube.com/vi/mboca1p2gU4/hqdefault.jpg" alt="Narodna ortopedija – video">
+          <img src="assets/img/yt/mboca1p2gU4.jpg" alt="Narodna ortopedija – video">
           <span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
           <figcaption><img src="assets/img/radomir.jpg" alt=""><div><b>Narodna ortopedija</b><span>Pogledajte video</span></div></figcaption>
         </a>
@@ -301,14 +296,14 @@
   <div class="container famous">
     <h3 class="reveal">Na tretmanu su bili i</h3>
     <div class="famous__grid">
-      <figure class="reveal"><img src="assets/img/miki-manojlovic.jpg" alt="Miki Manojlović"><figcaption>Glumac Miki Manojlović</figcaption></figure>
-      <figure class="reveal"><img src="assets/img/divac.jpg" alt="Vlade Divac"><figcaption>Košarkaš Vlade Divac</figcaption></figure>
-      <figure class="reveal"><img src="assets/img/selektor-antic.jpg" alt="Selektor Antić"><figcaption>Selektor Antić</figcaption></figure>
-      <figure class="reveal"><img src="assets/img/djilas.jpg" alt="Dragan Đilas"><figcaption>Gradonačelnik Beograda Đilas</figcaption></figure>
-      <figure class="reveal"><img src="assets/img/vuk-stambolic.jpg" alt="Dr Vuk Stambolić"><figcaption>Dr Vuk Stambolić</figcaption></figure>
-      <figure class="reveal"><img src="assets/img/dr-grcka.jpg" alt="Kongres u Grčkoj"><figcaption>Dr Ergen, Turska — kongres u Grčkoj</figcaption></figure>
-      <figure class="reveal"><img src="assets/img/fudbaler-kacar.jpg" alt="Fudbaler Kačar"><figcaption>Fudbaler Kačar</figcaption></figure>
-      <figure class="reveal"><img src="assets/img/fudbaler-dalibor.jpg" alt="Fudbaler Dalibor Dašić"><figcaption>Fudbaler Dalibor Dašić</figcaption></figure>
+      <figure class="reveal"><span class="fit"><img src="assets/img/miki-manojlovic.jpg" alt="Miki Manojlović"></span><figcaption>Glumac Miki Manojlović</figcaption></figure>
+      <figure class="reveal"><span class="fit"><img src="assets/img/divac.jpg" alt="Vlade Divac"></span><figcaption>Košarkaš Vlade Divac</figcaption></figure>
+      <figure class="reveal"><span class="fit"><img src="assets/img/selektor-antic.jpg" alt="Selektor Antić"></span><figcaption>Selektor Antić</figcaption></figure>
+      <figure class="reveal"><span class="fit"><img src="assets/img/djilas.jpg" alt="Dragan Đilas"></span><figcaption>Gradonačelnik Beograda Đilas</figcaption></figure>
+      <figure class="reveal"><span class="fit"><img src="assets/img/vuk-stambolic.jpg" alt="Dr Vuk Stambolić"></span><figcaption>Dr Vuk Stambolić</figcaption></figure>
+      <figure class="reveal"><span class="fit"><img src="assets/img/dr-grcka.jpg" alt="Kongres u Grčkoj"></span><figcaption>Dr Ergen, Turska — kongres u Grčkoj</figcaption></figure>
+      <figure class="reveal"><span class="fit"><img src="assets/img/fudbaler-kacar.jpg" alt="Fudbaler Kačar"></span><figcaption>Fudbaler Kačar</figcaption></figure>
+      <figure class="reveal"><span class="fit"><img src="assets/img/fudbaler-dalibor.jpg" alt="Fudbaler Dalibor Dašić"></span><figcaption>Fudbaler Dalibor Dašić</figcaption></figure>
     </div>
   </div>
 </section>
@@ -324,12 +319,12 @@
       <p>Tu je sve rečeno o meni — shvatićete kako se prirodnim putem, u saradnji sa savremenom medicinom, isceljuje telo.</p>
     </div>
     <div class="videos__grid">
-      <a class="vid reveal" data-yt="mboca1p2gU4" href="https://www.youtube.com/watch?v=mboca1p2gU4"><span class="vid__thumb"></span><h4>Narodna ortopedija</h4></a>
-      <a class="vid reveal" data-yt="aeWd9bg47Ns" href="https://www.youtube.com/watch?v=aeWd9bg47Ns"><span class="vid__thumb"></span><h4>Terapija zavezanih očiju</h4></a>
-      <a class="vid reveal" data-yt="C9hRrv91vUo" href="https://www.youtube.com/watch?v=C9hRrv91vUo"><span class="vid__thumb"></span><h4>„Svijet Ezoterije“ – Opatija 2014</h4></a>
-      <a class="vid reveal" data-yt="ENUyvpecrVA" href="https://www.youtube.com/watch?v=ENUyvpecrVA"><span class="vid__thumb"></span><h4>Emisija „Ćaskanje“ – SOS kanal</h4></a>
-      <a class="vid reveal" data-yt="Wr7HomPV9gE" href="https://www.youtube.com/watch?v=Wr7HomPV9gE"><span class="vid__thumb"></span><h4>Lekari bez skalpela</h4></a>
-      <a class="vid reveal" data-yt="BArIi9f5sBM" href="https://www.youtube.com/watch?v=BArIi9f5sBM"><span class="vid__thumb"></span><h4>Nameštanje kostiju – matrica dugovečnosti</h4></a>
+      <a class="vid reveal" data-yt="mboca1p2gU4" href="https://www.youtube.com/watch?v=mboca1p2gU4"><span class="vid__thumb"><img src="assets/img/yt/mboca1p2gU4.jpg" alt="" loading="lazy"></span><h4>Narodna ortopedija</h4></a>
+      <a class="vid reveal" data-yt="aeWd9bg47Ns" href="https://www.youtube.com/watch?v=aeWd9bg47Ns"><span class="vid__thumb"><img src="assets/img/yt/aeWd9bg47Ns.jpg" alt="" loading="lazy"></span><h4>Terapija zavezanih očiju</h4></a>
+      <a class="vid reveal" data-yt="C9hRrv91vUo" href="https://www.youtube.com/watch?v=C9hRrv91vUo"><span class="vid__thumb"><img src="assets/img/yt/C9hRrv91vUo.jpg" alt="" loading="lazy"></span><h4>„Svijet Ezoterije“ – Opatija 2014</h4></a>
+      <a class="vid reveal" data-yt="ENUyvpecrVA" href="https://www.youtube.com/watch?v=ENUyvpecrVA"><span class="vid__thumb"><img src="assets/img/yt/ENUyvpecrVA.jpg" alt="" loading="lazy"></span><h4>Emisija „Ćaskanje“ – SOS kanal</h4></a>
+      <a class="vid reveal" data-yt="Wr7HomPV9gE" href="https://www.youtube.com/watch?v=Wr7HomPV9gE"><span class="vid__thumb"><img src="assets/img/yt/Wr7HomPV9gE.jpg" alt="" loading="lazy"></span><h4>Lekari bez skalpela</h4></a>
+      <a class="vid reveal" data-yt="BArIi9f5sBM" href="https://www.youtube.com/watch?v=BArIi9f5sBM"><span class="vid__thumb"><img src="assets/img/yt/BArIi9f5sBM.jpg" alt="" loading="lazy"></span><h4>Nameštanje kostiju – matrica dugovečnosti</h4></a>
     </div>
   </div>
 </section>
@@ -369,12 +364,12 @@
     <p>Odgovorili smo na najčešća pitanja o tretmanima, zakazivanju i Dečanskoj metodi. Za sve ostalo — pozovite nas.</p>
     <a class="btn btn--dark" href="tel:+381641336483">Pozovite nas <i class="arr"></i></a>
   </div>
-  <div class="faq__list reveal">
-    <details class="qa"><summary>Šta je Dečanska metoda sinapsologije?</summary><p>Prirodna metoda nameštanja kičme i zglobova koja je prerasla u novu metodu rehabilitacije. Naučnici iz Italije rekli su da su kostolomci stvarni kreatori sinapsologije — otvaraju puteve kako bi se sinapse kretale kroz ceo organizam.</p></details>
-    <details class="qa"><summary>Kada mogu da zakažem termin?</summary><p>Zakazivanje termina je svakog radnog dana od 9 do 20h, telefonom kod Radomira, Bojana, Ivane ili Jelene.</p></details>
-    <details class="qa"><summary>Gde se nalazite?</summary><p>Svi živimo i radimo u Beogradu, na Autokomandi. Periodično radimo i na Zlatiboru. Tačna adresa biće vam poznata prilikom zakazivanja.</p></details>
-    <details class="qa"><summary>Da li je metoda zaštićena?</summary><p>Da. Dečanska metoda je zaštićena i prijavljena Autorskoj agenciji Srbije kao autorsko delo, pod brojem k-07/11, dana 28.02.2011. godine.</p></details>
-    <details class="qa" open><summary>Kako da poručim knjigu?</summary><p>Pošaljite SMS ili e-mail sa imenom, prezimenom, punom adresom i kontakt telefonom na 064 13 36 483 ili antikakostolomac@gmail.com. Knjigu šaljemo poštom najkasnije 48h od prijema poruke. Cena je 3.000 dinara + poštarina.</p></details>
+  <div class="faq__list reveal" data-accordion>
+    <details class="qa" open><summary>Šta je Dečanska metoda sinapsologije?</summary><div class="acc__body"><p>Prirodna metoda nameštanja kičme i zglobova koja je prerasla u novu metodu rehabilitacije. Naučnici iz Italije rekli su da su kostolomci stvarni kreatori sinapsologije — otvaraju puteve kako bi se sinapse kretale kroz ceo organizam.</p></div></details>
+    <details class="qa"><summary>Kada mogu da zakažem termin?</summary><div class="acc__body"><p>Zakazivanje termina je svakog radnog dana od 9 do 20h, telefonom kod Radomira, Bojana, Ivane ili Jelene.</p></div></details>
+    <details class="qa"><summary>Gde se nalazite?</summary><div class="acc__body"><p>Svi živimo i radimo u Beogradu, na Autokomandi. Periodično radimo i na Zlatiboru. Tačna adresa biće vam poznata prilikom zakazivanja.</p></div></details>
+    <details class="qa"><summary>Da li je metoda zaštićena?</summary><div class="acc__body"><p>Da. Dečanska metoda je zaštićena i prijavljena Autorskoj agenciji Srbije kao autorsko delo, pod brojem k-07/11, dana 28.02.2011. godine.</p></div></details>
+    <details class="qa"><summary>Kako da poručim knjigu?</summary><div class="acc__body"><p>Pošaljite SMS ili e-mail sa imenom, prezimenom, punom adresom i kontakt telefonom na 064 13 36 483 ili antikakostolomac@gmail.com. Knjigu šaljemo poštom najkasnije 48h od prijema poruke. Cena je 3.000 dinara + poštarina.</p></div></details>
   </div>
 </section>
 
@@ -390,7 +385,7 @@
       <a href="tel:+381604041177"><b>Ivana</b>060 40 41 177</a>
       <a href="tel:+38169620089"><b>Jelena</b>069 620 089</a>
     </div>
-    <a class="btn btn--dark" href="tel:+381641336483">Zakaži tretman <i class="arr"></i></a>
+    <a class="btn btn--dark" href="#zakazivanje" data-book>Zakaži tretman <i class="arr"></i></a>
   </div>
 </section>
 
@@ -439,6 +434,77 @@
     </div>
   </div>
 </footer>
+
+<!-- ============ ZAKAZIVANJE (modal) ============ -->
+<dialog class="book-modal" id="zakazivanje" aria-labelledby="bm-title">
+  <div class="bm">
+    <button class="bm__close" type="button" data-close aria-label="Zatvori">
+      <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+
+    <div class="bm__side">
+      <span class="tag tag--dark"><i class="spark"></i>Zakazivanje</span>
+      <h2 id="bm-title">Zakažite<br><em>tretman</em></h2>
+      <p>Izaberite terapeuta i popunite kratku poruku. Pošaljite je SMS-om, Viberom ili WhatsApp-om — termin je potvrđen kada vam terapeut odgovori.</p>
+      <ul class="bm__facts">
+        <li><b>Radnim danima</b><span>9–20h</span></li>
+        <li><b>Beograd</b><span>Autokomanda</span></li>
+        <li><b>Periodično</b><span>Zlatibor</span></li>
+      </ul>
+      <p class="bm__small">Tačnu adresu dobijate prilikom potvrde termina.</p>
+    </div>
+
+    <div class="bm__main">
+      <form class="bm__form" id="bm-form" novalidate>
+        <fieldset class="bm__who">
+          <legend>1. Kod koga želite tretman?</legend>
+          <div class="who">
+            <label class="who__opt"><input type="radio" name="terapeut" id="t-radomir" value="radomir" checked><span class="who__card"><img src="assets/img/radomir.jpg" alt=""><b>Radomir</b><small>064 13 36 483</small></span></label>
+            <label class="who__opt"><input type="radio" name="terapeut" id="t-bojan" value="bojan"><span class="who__card"><img src="assets/img/bojan.jpg" alt=""><b>Bojan</b><small>060 62 80 088</small></span></label>
+            <label class="who__opt"><input type="radio" name="terapeut" id="t-ivana" value="ivana"><span class="who__card"><img src="assets/img/ivana.jpg" alt=""><b>Ivana</b><small>060 40 41 177</small></span></label>
+            <label class="who__opt"><input type="radio" name="terapeut" id="t-jelena" value="jelena"><span class="who__card"><img src="assets/img/jelena.jpg" alt=""><b>Jelena</b><small>069 620 089</small></span></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>2. Vaši podaci</legend>
+          <div class="bm__grid">
+            <label class="field"><span>Ime i prezime</span><input id="bm-ime" name="ime" autocomplete="name" required placeholder="npr. Marko Marković"></label>
+            <label class="field"><span>Telefon</span><input id="bm-tel" name="tel" type="tel" autocomplete="tel" required placeholder="06x xxx xxxx"></label>
+            <label class="field"><span>Mesto</span>
+              <select id="bm-mesto" name="mesto"><option>Beograd – Autokomanda</option><option>Zlatibor</option></select></label>
+            <label class="field"><span>Željeni dan</span><input id="bm-dan" name="dan" type="date"></label>
+            <div class="field field--full"><span>Deo dana</span>
+              <div class="seg">
+                <label><input type="radio" name="deo" id="deo-1" value="pre podne (9–14h)" checked><span>Pre podne<small>9–14h</small></span></label>
+                <label><input type="radio" name="deo" id="deo-2" value="posle podne (14–20h)"><span>Posle podne<small>14–20h</small></span></label>
+                <label><input type="radio" name="deo" id="deo-3" value="bilo kada"><span>Svejedno<small>9–20h</small></span></label>
+              </div>
+            </div>
+            <label class="field field--full"><span>Šta vas muči? <small>(nije obavezno)</small></span><textarea id="bm-opis" name="opis" rows="3" placeholder="npr. bol u lumbalnom delu, ukočen vrat…"></textarea></label>
+          </div>
+        </fieldset>
+        <p class="bm__error" id="bm-error" hidden></p>
+        <button class="btn btn--dark bm__submit" type="submit">Pripremi poruku <i class="arr"></i></button>
+      </form>
+
+      <div class="bm__done" id="bm-done" hidden>
+        <span class="bm__check"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+        <h3>Poruka je spremna</h3>
+        <p>Izaberite kako želite da je pošaljete terapeutu <b id="bm-who">Radomiru</b>. Termin je potvrđen kada vam odgovori.</p>
+        <pre class="bm__msg" id="bm-msg"></pre>
+        <div class="bm__send">
+          <a class="send send--sms" id="bm-sms" href="#">SMS</a>
+          <a class="send send--viber" id="bm-viber" href="#">Viber</a>
+          <a class="send send--wa" id="bm-wa" href="#" target="_blank" rel="noopener">WhatsApp</a>
+          <button class="send send--copy" id="bm-copy" type="button">Kopiraj poruku</button>
+        </div>
+        <p class="bm__call">Radije biste da pozovete? <a id="bm-call" href="tel:+381641336483">064 13 36 483</a></p>
+        <button class="bm__back" type="button" id="bm-back">← Izmeni podatke</button>
+      </div>
+    </div>
+  </div>
+</dialog>
 
 <script src="assets/js/main.js"></script>
 </body>
